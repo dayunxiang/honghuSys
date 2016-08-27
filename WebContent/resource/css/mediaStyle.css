@@ -1,0 +1,162 @@
+﻿/**
+*  @media,适配不同页面布局结构
+*/
+
+body {
+}
+
+@media screen and (max-width:4360px) {
+    #map,
+    #title,
+    #functionlist,
+    #userinfo,
+    #accordion {
+        position: fixed;
+    }
+
+    #map {
+        width: 100%;
+        height: 100%;
+    }
+
+    #title,
+    #functionlist,
+    #userinfo {
+        z-index: 5555;
+    }
+
+    #title {
+        position: fixed;
+        margin: 10px 0px 0px 10px;
+        font-size: 1.5em;
+    }
+
+    #functionlist {
+        top: 2%;
+        right: 5%;
+    }
+
+        #functionlist ul {
+            list-style-type: none;
+        }
+
+            #functionlist ul li {
+                float: left;
+                font-size: 1.2em;
+            }
+
+                #functionlist ul li button {
+                    width: 65px;
+                    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                }
+
+    #user div {
+        padding-top: 20px;
+        width: 100%;
+    }
+
+    #userinfo {
+        top: 2%;
+        right: 1.5%;
+        width: 80px;
+        height: 80px;
+    }
+
+        #userinfo img {
+            width: 70px;
+            height: 70px;
+        }
+
+    #userLogin {
+        width: 380px;
+        background-color: #ffffff;
+        padding: 30px 50px;
+        top: 200px;
+        margin: 0 auto;
+        border-radius: 15px;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+    }
+
+        #userLogin #btnLogin {
+            margin-top: 20px;
+        }
+
+            #userLogin #btnLogin div.btnlogin {
+                width: 100%;
+            }
+
+    #loginModal {
+        z-index: 9999;
+    }
+
+    #chart {
+        position: absolute;
+        height: 380px;
+        width: 540px;
+        border-radius: 10px 10px;
+        bottom: 15px;
+        right: 15px;
+        display: none;
+    }
+
+    .selectLayerModal {
+        width: 200px;
+        height: 180px;
+        right: 5%;
+        top: 12%;
+        position: fixed;
+        z-index: 5555;
+        background-color: #fff;
+    }
+
+    .swipeLayerModal {
+        width: 200px;
+        height: 210px;
+        right: 5%;
+        top: 12%;
+        position: fixed;
+        z-index: 5555;
+        background-color: #fff;
+    }
+
+    #swipeMapModal {
+        width: 100%;
+        bottom: 2%;
+        z-index: 5555;
+        position: fixed;
+        background-color: #fff;
+    }
+
+    #swipeModalDiv {
+        bottom: 6%;
+        z-index: 5555;
+        margin-left: 20px;
+        position: fixed;
+    }
+
+    #swipeClosebtn {
+        width: 20px;
+        height: 20px;
+        border-radius: 10px;
+        padding: 2px;
+        border: 1px solid transparent;
+        color: #fff;
+        background-color: #d9534f;
+        border-color: #d43f3a;
+    }
+
+    #info {
+        position: fixed;
+        z-index: 999;
+        top: 25%;
+        right: 5%;
+        background: #fff;
+    }
+}
+
+@media screen and (max-width:1275px) {
+}
+
+@media screen and (max-width:450px) {
+}

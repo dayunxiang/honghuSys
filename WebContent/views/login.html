@@ -1,0 +1,21 @@
+﻿<div>
+    <div id="userLogin">
+        <div id="user">
+            <p style="font-size:20px;font-weight:bold">用户登录和注册</p>
+            <div style="line-height:2.0em" class="ui input">
+                <input ng-model="username" id="username" style="line-height:2.0em;font-size:1.5em;padding:0.3em 1.0em" type="text" placeholder="用户名...">
+            </div>
+            <div class="ui input">
+                <input ng-model="password" id="password" style="line-height:2em;font-size:1.5em;padding:0.3em 1.0em" type="password" placeholder="密码">
+            </div>
+        </div>
+        <p>{{logintips}}</p>
+        <div id="btnLogin">
+            <div class="btnlogin  ui buttons">
+                <div id="confirmBtn" ng-click="login(logintips,username,password)" style="width:49%;line-height:1.1em;font-size:1.1em" class="ui red button">登陆</div>
+                <div class="or"></div>
+                <div id="registryBtn" style="width:49.5%;font-size:1.1em" class="ui  button">注册</div>
+            </div>
+        </div>
+    </div>
+</div>

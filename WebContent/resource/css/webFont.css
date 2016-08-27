@@ -1,0 +1,53 @@
+﻿/*普通思源黑体*/
+@font-face {font-family: "webfont";
+  src: url('../fonts/webFont/webfont.eot'); /* IE9*/
+  src: url('../fonts/webFont/webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../fonts/webFont/webfont.woff') format('woff'), /* chrome、firefox */
+  url('../fonts/webFont/webfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url('../fonts/webFont/webfont.svg#webfont') format('svg'); /* iOS 4.1- */
+}
+
+.web-font {
+  font-family:"webfont" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/*加粗思源黑体*/
+@font-face {font-family: "webFontBold";
+  src: url('../fonts/webFontBold/webfont.eot'); /* IE9*/
+  src: url('../fonts/webFontBold/webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../fonts/webFontBold/webfont.woff') format('woff'), /* chrome、firefox */
+  url('../fonts/webFontBold/webfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url('../fonts/webFontBold/webfont.svg#webfont') format('svg'); /* iOS 4.1- */
+}
+
+.web-font-bold {
+  font-family:"webFontBold" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/*加重粗思源黑体*/
+@font-face {font-family: "webFontGrivity";
+  src: url('../fonts/webFontGrivity/webfont.eot'); /* IE9*/
+  src: url('../fonts/webFontGrivity/webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../fonts/webFontGrivity/webfont.woff') format('woff'), /* chrome、firefox */
+  url('../fonts/webFontGrivity/webfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url('../fonts/webFontGrivity/webfont.svg#webfont') format('svg'); /* iOS 4.1- */
+}
+
+.web-font-grivity{
+  font-family:"webFontGrivity" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}

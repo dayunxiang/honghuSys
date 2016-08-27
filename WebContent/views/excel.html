@@ -1,0 +1,46 @@
+﻿<div>
+	<h2 style="margin: 20px;">洪湖水质检测系统调查表</h2>
+	<h4 style="margin: 20px;">
+		/*历次洪湖水质采样调查数据，各个采样点的详细分析结果(包含各项指标，PH，总氮，总磷，溶解氧.....) */</h4>
+	<div style="margin: 20px">
+		<div id="toolbar" class="btn-group">
+			<button type="button" class="btn btn-default">
+				<i class="glyphicon glyphicon-plus"></i>
+			</button>
+			<button type="button" class="btn btn-default">
+				<i class="glyphicon glyphicon-heart"></i>
+			</button>
+			<button type="button" class="btn btn-default">
+				<i class="glyphicon glyphicon-trash"></i>
+			</button>
+			<select class="form-control">
+				<option value="">Export Basic</option>
+				<option value="all">Export All</option>
+				<option value="selected">Export Selected</option>
+			</select>
+		</div>
+		<table id="table" data-toggle="table" data-toolbar="#toolbar"
+			data-search="true" data-show-refresh="true" data-show-toggle="true"
+			data-show-columns="true" data-pagination="true"
+			data-show-export="true">
+			<thead>
+				<tr>
+					<th data-field="state" data-checkbox='true'></th>
+					<th data-field="ID">ID</th>
+					<th data-field="point_N">point_N</th>
+					<th data-field="point_E">point_E</th>
+					<th data-field="depth">depth</th>
+					<th data-field="pH">pH</th>
+					<th data-field="transparen">transparent</th>
+					<th data-field="temperatur">temperature</th>
+					<th data-field="Dissoived">Dissovied_</th>
+					<th data-field="NH4_N">NH4_N_</th>
+					<th data-field="TN">TN_</th>
+					<th data-field="TP">TP_</th>
+					<th data-field="CODMn">CODMn_</th>
+				</tr>
+			</thead>
+		</table>
+	</div>
+
+</div>

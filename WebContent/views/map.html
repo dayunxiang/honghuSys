@@ -1,0 +1,71 @@
+﻿<div id="mapHandler">
+    <div id="title" class="ui primary button">洪湖水质监测系统</div>
+    <div id="functionlist">
+        <ul class="row" style="text-decoration-style: none;padding-left:5px;">
+            <li class="btn btn-default" data-toggle="tooltip"
+                data-placement="bottom" title="打开卷帘功能" ng-click="enableCurtain()"
+                ng-style="curtainBtnStyle">卷帘</li>
+            <li class="btn btn-default" data-toggle="tooltip"
+                data-placement="bottom" ng-click="DivCollapsed()" ng-style="surveyBtnStyle">观测点</li>
+            <li class="btn btn-default" data-toggle="tooltip"
+                data-placement="bottom" title="选择统计类型" ng-click="displayCharts()">统计图表</li>
+            <li class="btn btn-default" data-toggle="tooltip"
+                data-placement="bottom" title="选测插值结果" ng-click="displayExtrcts()">插值结果</li>
+            <li class="btn btn-default" data-toggle="tooltip"
+                data-placement="bottom" title="数据统计检索"><a style="text-decoration:none;" href="#/excel">数据检索</a></li>
+        </ul>
+    </div>
+
+    <!--选择观测点数据页-->
+    <div ng-show="surveySelShow" class="selectLayerModal">
+        <div class="modal-header">
+            <h5 class="modal-title">选择观测点</h5>
+        </div>
+        <div class="modal-body">
+            <div ng-repeat="layer in layerList" class="checkbox">
+                <label>
+                    <input type="checkbox" ng-model="layer.isChecked" ng-change="data1ChangFun($index)" />
+                    {{layer.name}}
+                </label>
+            </div>
+        </div>
+    </div>
+
+    <!--卷帘选择数据页-->
+    <div ng-show="swipeDataShow" class="swipeLayerModal">
+        <div class="modal-header">
+            <h5 class="modal-title">选择比较数据</h5>
+        </div>
+        <div class="modal-body">
+            <div class="checkbox" ng-repeat="data in dataList">
+                <label><input type="checkbox" ng-model="data.isChecked" /> {{data.name}}</label>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-primary" type="button" ng-click="swipeDataok()">OK</button>
+            <button class="btn btn-warning" type="button" ng-click="swipeDatacancel()">Cancel</button>
+        </div>
+    </div>
+
+    <!--卷帘进度条页-->
+    <div ng-show="swipeMapShow" >
+        <div id="swipeMapModal">
+            <input id="swipe" type="range">
+        </div>
+        <div id="swipeModalDiv">
+            <button id="swipeClosebtn" ng-click="closeSwipeMap()">
+                <i class="glyphicon glyphicon-remove"></i>
+            </button>
+        </div>
+    </div>
+    
+    <!--信息窗-->
+    <div  id="info">
+
+    </div>
+    <!--<div id=" userinfo">
+        <img src="" alt="" class="img-thumbnail" />
+    </div>-->
+    <div id="map"></div>
+    <div id="chart" class="dark-unica"></div>
+</div>
